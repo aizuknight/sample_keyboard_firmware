@@ -10,18 +10,39 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "rgblight": true
     },
     "matrix_pins": {
         "cols": ["GP27", "GP28", "GP7"],
         "rows": ["GP6", "GP26"]
     },
     "processor": "RP2040",
+    "rgblight": {
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "static_gradient": true,
+            "twinkle": true
+        },
+        "default": {
+            "animation": "rainbow_mood",
+            "val": 128
+        },
+        "driver": "ws2812",
+        "led_count": 6,
+        "sleep": true
+    },
     "url": "",
     "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
+        "device_version": "0.0.1",
+        "pid": "0x0002",
+        "vid": "0x0361"
+    },
+    "ws2812": {
+        "driver": "vendor",
+        "pin": "GP0"
     },
     "layouts": {
         "LAYOUT": {
